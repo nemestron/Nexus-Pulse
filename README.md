@@ -13,6 +13,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
+- [Live Links](#live-links)
 - [Key Features](#key-features)
 - [Agent Architecture](#agent-architecture)
 - [Tech Stack](#tech-stack)
@@ -44,6 +45,14 @@ Built for speed, security, and scalability, NEXUS-PULSE leverages:
 
 ---
 
+## Live Links
+
+**Application**: https://nexus-pulse.streamlit.app/
+
+**Telegram Channel**: https://t.me/NexusPulseNews
+
+---
+
 ## Key Features
 
 | Feature | Description |
@@ -64,21 +73,21 @@ Built for speed, security, and scalability, NEXUS-PULSE leverages:
 ```
 ┌─────────────────────────────────────────┐
 │            INPUT: Search Topic           │
-└────────────────┬────────────────────────┘
+└────────────────────────────────────────┘
                  ▼
 ┌─────────────────────────────────────────┐
 │  TRIAGE NODE (llama-3.1-8b-instant)     │
 │  • Filters irrelevant/noisy data         │
 │  • Extracts core intelligence signals    │
-└────────────────┬────────────────────────┘
+└────────────────────────────────────────┘
                  ▼
 ┌─────────────────────────────────────────┐
 │ AUTH NODE (llama-3.3-70b-versatile)     │
 │  • Cross-references against vector DB   │
 │  • Sets verification_status boolean      │
-└────────────────┬────────────────────────┘
+└────────────────────────────────────────┘
                  ▼
-        ┌────────────────┐
+        ┌────────────────
         │ verification?  │
         └───────┬────────┘
        false    │    true
@@ -86,11 +95,11 @@ Built for speed, security, and scalability, NEXUS-PULSE leverages:
    ┌─────────┐  ┌─────────────────────────┐
    │ TERMINATE│  │ SYNTHESIS NODE          │
    │  Node   │  │ (llama-3.3-70b-versatile)│
-   └─────────┘  │ • Rewrites & compresses │
+   └─────────  │ • Rewrites & compresses │
                 │ • Maintains factual integrity│
-                └────────┬────────────────┘
+                └────────┬────────────────
                          ▼
-┌─────────────────────────────────────────┐
+─────────────────────────────────────────┐
 │ FORMATTING NODE (llama-3.1-8b-instant)  │
 │ • Enforces rigid output structure        │
 │ • Prepares payload for dissemination     │
@@ -100,7 +109,7 @@ Built for speed, security, and scalability, NEXUS-PULSE leverages:
 │ HUMAN CHECKPOINT (Optional Pause)       │
 │ • Review draft in Streamlit UI          │
 │ • Approve/Reject before transmission    │
-└────────────────┬────────────────────────┘
+└────────────────────────────────────────┘
                  ▼
 ┌─────────────────────────────────────────┐
 │ TELEGRAM DELIVERY NODE                  │
@@ -355,10 +364,3 @@ SOFTWARE.
 ```
 
 ---
-
-> **Built by Dendri**  
-> Senior Agentic AI Engineer Portfolio Project  
-> Final Year Project — AI & Data Science  
-> LinkedIn · GitHub
-
-```
