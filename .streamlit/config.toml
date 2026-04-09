@@ -1,0 +1,9 @@
+[server]
+# Disable the aggressive file watcher for production stability
+fileWatcherType = "none"
+runOnSave = false
+headless = true
+
+[logger]
+# Suppress non-critical dependency tracebacks
+level = "error"
