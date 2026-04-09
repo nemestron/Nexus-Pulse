@@ -15,3 +15,6 @@ nexus_ops.log
 # OS generated files
 .DS_Store
 Thumbs.db
+# Graph Checkpoints
+checkpoints.sqlite
+checkpoints.sqlite-journal
