@@ -7,7 +7,7 @@ from state import GraphState
 from graph_engine import app
 
 def main():
-    print("\n[SYSTEM] Initiating Phase 5 Manual Override Test...")
+    print("\n[SYSTEM] Initiating Phase 6 Dissemination Dry Run...")
     
     initial_state = GraphState(
         raw_text="Retrieve intelligence regarding Zero Trust Architecture protocols.",
@@ -48,7 +48,7 @@ def main():
                 for output in app.stream(None, config=config):
                      for node_name, node_state in output.items():
                         print(f"[EXECUTED NODE] -> {node_name.upper()}")
-                print("[OPERATION SUCCESS] Phase 5 Testing Complete. Payload authorized and delivered.")
+                print("[OPERATION SUCCESS] Phase 6 Testing Complete. Payload authorized and delivered.")
             else:
                 print("[SYSTEM] Authorization denied. Purging thread.")
         else:
