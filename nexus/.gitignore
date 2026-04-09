@@ -1,0 +1,17 @@
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local Database & Telemetry
+local_db/
+nexus_ops.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
